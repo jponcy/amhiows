@@ -14,6 +14,6 @@ describe "LayoutLinks" do
 
   it "should reach about page at '/about'" do
     get '/about'
-    response.should have_selector('title', :content => 'À Propos')
+    response.should have_selector('title', :content => '| À propos')
   end
 end
