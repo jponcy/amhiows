@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'spec_helper'
 
 describe "LayoutLinks" do
@@ -8,11 +9,11 @@ describe "LayoutLinks" do
 
   it "should reach contact page at '/contact'" do
     get '/contact'
-#    response.should have_selector('title', :content => "Contact")
+    response.should have_selector('title', :content => "Contact")
   end
 
   it "should reach about page at '/about'" do
     get '/about'
-    response.should have_selector('title', :content => "A Propos")
+    response.should have_selector('title', :content => 'À Propos')
   end
 end

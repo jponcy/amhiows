@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'spec_helper'
 
 describe PagesController do
@@ -34,7 +35,7 @@ describe PagesController do
     end
     it "should have the correct title" do
       get :about
-      response.should have_selector("title", :content => " | A propos")
+      response.should have_selector("title", :content => " | À propos")
     end
   end
 
