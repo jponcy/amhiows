@@ -1,6 +1,6 @@
 Amhiows::Application.routes.draw do
-  get "pages/home"
-  get "pages/contact"
-  get "pages/about"
+  match '/contact' => 'pages#contact', :as => :contact
+  match '/about' => 'pages#about', :as => :about
+  root :to => 'pages#home'
 
 end
