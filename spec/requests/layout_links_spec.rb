@@ -16,4 +16,14 @@ describe "LayoutLinks" do
     get '/about'
     response.should have_selector('title', :content => '| À propos')
   end
+  
+  it "should have corrects links on the layout" do
+    visit home_path
+    click_link "À Propos"
+    response.should have_selector('title', :content => '| À propos')
+    click_link "Accueil"
+    response.should have_selector('title', :content => " | Accueil")
+    click_link "Contact"
+    response.should have_selector('title', :content => "Contact")
+  end
 end
