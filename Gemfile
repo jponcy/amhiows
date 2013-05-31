@@ -28,6 +28,7 @@ end
 group :test do
   gem 'rspec', '2.12.0'
   gem 'webrat', '0.7.1'
+  gem 'factory_girl_rails'
 end
 
 gem 'jquery-rails'

@@ -1,0 +1,23 @@
+<table class="profile" summary="Fiche du produit">
+  <tr>
+    <td class="main">
+      <h1>
+        <!-- TODO Add an image about the product -->
+        <%= @product.label %>
+      </h1>
+	  <p>
+		<%= @product.description %>
+	  </p>
+    </td>
+    <td class="sidebar round">
+      <strong>Produit:</strong> <%= @product.label %><br />
+      <strong>URL:</strong>  <%=  link_to product_path(@product), @product  %><br />
+      <strong>Prix:</strong> <%= @product.price %><br />
+      <% if available? then %>
+        <span><%= print_quantity %><%= link_to 'Acheter !', "#", :class => "buy_button round" %></span>
+      <% else %>
+        <span class="advert">Indisponible :'(</span>
+      <% end %>
+    </td>
+  </tr>
+</table>

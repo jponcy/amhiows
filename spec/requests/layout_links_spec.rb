@@ -26,4 +26,5 @@ describe "LayoutLinks" do
     click_link "Contact"
     response.should have_selector('title', :content => "Contact")
   end
+  it "TODO - add a test about view one product"
 end

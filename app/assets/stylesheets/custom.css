@@ -28,24 +28,6 @@ section h1 {
 
 
 
-/* Liens */
-
-a {
-  color: #09c;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #069;
-  text-decoration: underline;
-}
-
-a:visited {
-  color: #069;
-}
-
-
-
 /* Navigation */
 
 nav {
@@ -84,9 +66,72 @@ nav ul li a:hover {
 
 
 
-/* Bouton inscription */
+/* Coins arrondis */
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
 
-a.signup_button {
+
+
+/* Alert */
+.advert {
+  color: red;
+  font-size: 1.5em;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 710px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer nav {
+  float: none;
+}
+
+
+
+/* Tables */
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  /*
+  background: #ffc;
+  */
+}
+
+
+
+/* Liens */
+a {
+  color: #09c;
+  text-decoration: none;
+}
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+a:visited {
+  color: #069;
+}
+/* Buttons */
+a.buy_button {
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -98,28 +143,15 @@ a.signup_button {
   font-weight: bold;
   padding: 20px;
 }
-
-
-
-/* Coins arrondis */
-
-.round {
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
-}
-
-
-/* Footer */
-
-footer {
-  text-align: center;
-  margin-top: 10px;
-  width: 710px;
+a.signup_button {
   margin-left: auto;
   margin-right: auto;
-}
-
-footer nav {
-  float: none;
+  display: block;
+  text-align: center;
+  width: 190px;
+  color: #fff;
+  background: #006400;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 20px;
 }
